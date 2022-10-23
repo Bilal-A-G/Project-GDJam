@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,17 +8,46 @@ public class SceneSwitcher : MonoBehaviour
 {
     public float fadeSpeed;
     public int hangTime;
+
     public Image cover;
+    public List<Scene> scenes;
+    public Scene currentScene;
+
+    private static Image _cover;
+    private static List<Scene> _scenes;
+    private static Scene _currentScene;
 
     private float _coverAlpha;
     private bool _reverse;
-    private bool _fade;
+    private static bool _fade;
 
-    public void Fade()
+    private static GameObject _instantiatedScene;
+
+    private void Awake()
+    {
+        _cover = cover;
+        _scenes = scenes;
+        Debug.Log(scenes.Count + " " + _scenes.Count);
+        _currentScene = currentScene;
+        _instantiatedScene = currentScene.scene;
+    }
+
+    public static void Fade(string switchTo)
     {
         if(_fade) return;
 
-        cover.gameObject.SetActive(true);
+        if (_scenes.Count == 0)
+            return;
+
+        for (int i = 0; i < _scenes.Count; i++)
+        {
+            if (switchTo != _scenes[i].name) continue;
+            Destroy(_instantiatedScene);
+            _currentScene = _scenes[i];
+        }
+
+        _instantiatedScene = Instantiate(_currentScene.scene);
+        _cover.gameObject.SetActive(true);
         _fade = true;
     }
 
@@ -36,10 +66,17 @@ public class SceneSwitcher : MonoBehaviour
         {
             _fade = false;
             _reverse = false;
-            cover.gameObject.SetActive(false);
+            _cover.gameObject.SetActive(false);
             return;
         }
 
-        cover.color = new Color(cover.color.r, cover.color.g, cover.color.b, _coverAlpha);
+        _cover.color = new Color(_cover.color.r, _cover.color.g, _cover.color.b, _coverAlpha);
     }
+}
+
+[System.Serializable]
+public struct Scene
+{
+    public string name;
+    public GameObject scene;
 }

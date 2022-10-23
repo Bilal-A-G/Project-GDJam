@@ -8,7 +8,7 @@ public class DirectorySwitcher : MonoBehaviour
 {
     public DirectoryObject currentDirectory;
     public Transform iconParent;
-    public SceneSwitcher screenFlicker;
+    public SceneFader screenFlicker;
 
     private GameObject _instantiatedDirectory;
     private bool _isInstantiatedDirectoryNotNull;

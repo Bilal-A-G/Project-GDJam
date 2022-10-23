@@ -10,11 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b6d4cd1ee601d041ab8fff5914cd23b, type: 3}
-  m_Name: TestDir
+  m_Name: EndDirectory
   m_EditorClassIdentifier: 
-  childDirectories:
-  - {fileID: 11400000, guid: 2ad11e8ef7c46a6409cbd77a0df97907, type: 2}
-  name: testDir
-  icons: {fileID: 8536522749277810810, guid: 6881c9231b9e72d4b98ee5c4153332e7, type: 3}
-  parentDirectory: {fileID: 11400000, guid: b66d7873b96ce934194f533b5f790eee, type: 2}
-  textFile: 0
+  childDirectories: []
+  name: Joemama
+  icons: {fileID: 0}
+  parentDirectory: {fileID: 11400000, guid: a487110208f3fd243b5014860aabc546, type: 2}
+  textFile: 1

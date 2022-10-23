@@ -1,6 +1,4 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,7 +9,9 @@ public class InputHandler : MonoBehaviour
     public TextMeshProUGUI outputText;
     public Scrollbar scrollbar;
     public DirectorySwitcher directorySwitcher;
+    public string endScene;
 
+    public DirectoryObject endDirectory;
     public string changeDirectoryCommand;
 
     public float typeSpeed;
@@ -57,6 +57,12 @@ public class InputHandler : MonoBehaviour
             specialCaseHandled = true;
 
             string directoryName = inputText.text.Substring(3, processedInput.ToCharArray().Length - 2);
+
+            if (directoryName == endDirectory.name)
+            {
+                SceneSwitcher.Fade(endScene);
+                return true;
+            }
             
             bool success = directorySwitcher.SwitchDirectory(directoryName);
             directoryName = directorySwitcher.currentDirectory.name;
