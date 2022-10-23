@@ -1225,7 +1225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36c215670c7b4904db87e82cd1ae657d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToSolve: 200
+  timeToSolve: 10
   timerSpeed: 1
   timer: {fileID: 7827547245121232754}
 --- !u!114 &8131009756246024883
