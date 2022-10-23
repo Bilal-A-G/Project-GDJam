@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class DirectorySwitcher : MonoBehaviour
 {
-    public DirectoryObject endDirectory;
+    public List<Ending> endings;
     
     public DirectoryObject currentDirectory;
     public Transform iconParent;
@@ -21,7 +21,7 @@ public class DirectorySwitcher : MonoBehaviour
         _isInstantiatedDirectoryNotNull = _instantiatedDirectory != null;
     }
 
-    public bool SwitchDirectory(string switchTo, bool isText)
+    public bool SwitchDirectory(string switchTo, FileType fileType)
     {
         if (currentDirectory.parentDirectory != null && switchTo == "..")
         {
@@ -32,14 +32,17 @@ public class DirectorySwitcher : MonoBehaviour
 
         foreach (DirectoryObject directory in currentDirectory.childDirectories.Where(directory => directory.name == switchTo))
         {
-            if (directory.textFile != isText)
+            if (directory.type != fileType)
                 return false;
 
-            if (directory == endDirectory)
+            for (int i = 0; i < endings.Count; i++)
             {
-                SceneSwitcher.Fade("EndScene");
+                if (endings[i].directory != directory) continue;
+                
+                SceneSwitcher.Fade(endings[i].endingScene);
                 return true;
             }
+            
             currentDirectory = directory;
             InstantiateDirectory(currentDirectory);
             return true;
@@ -61,4 +64,11 @@ public class DirectorySwitcher : MonoBehaviour
         _instantiatedDirectory = Instantiate(directory.icons, iconParent);
         _isInstantiatedDirectoryNotNull = true;
     }
+}
+
+[System.Serializable]
+public struct Ending
+{
+    public DirectoryObject directory;
+    public string endingScene;
 }

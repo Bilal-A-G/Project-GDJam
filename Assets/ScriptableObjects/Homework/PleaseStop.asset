@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b6d4cd1ee601d041ab8fff5914cd23b, type: 3}
-  m_Name: Text
+  m_Name: PleaseStop
   m_EditorClassIdentifier: 
-  childDirectories: []
-  name: text
-  icons: {fileID: 0}
-  parentDirectory: {fileID: 0}
+  childDirectories:
+  - {fileID: 11400000, guid: 06e1a821674758849a6980d270e91925, type: 2}
+  name: Plz_stop
+  icons: {fileID: 4201336843524243964, guid: b9235b36ddffbba438ef88348f33cda1, type: 3}
+  parentDirectory: {fileID: 11400000, guid: 8c08164b8ce1e2c4589d14018e371337, type: 2}
   type: 3

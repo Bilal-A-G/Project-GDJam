@@ -16,4 +16,4 @@ MonoBehaviour:
   name: Astley
   icons: {fileID: 8536522749277810810, guid: 6881c9231b9e72d4b98ee5c4153332e7, type: 3}
   parentDirectory: {fileID: 11400000, guid: b66d7873b96ce934194f533b5f790eee, type: 2}
-  textFile: 0
+  type: 3

@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b6d4cd1ee601d041ab8fff5914cd23b, type: 3}
-  m_Name: Text
+  m_Name: Don'tGoFurther
   m_EditorClassIdentifier: 
-  childDirectories: []
-  name: text
-  icons: {fileID: 0}
-  parentDirectory: {fileID: 0}
+  childDirectories:
+  - {fileID: 11400000, guid: fdad97138b066684f90dbc9b6b99ab7a, type: 2}
+  name: Don't_Go_Further
+  icons: {fileID: 4201336843524243964, guid: 8e4b00eed468c7c42b816ed3cc530a0e, type: 3}
+  parentDirectory: {fileID: 11400000, guid: 06e1a821674758849a6980d270e91925, type: 2}
   type: 3

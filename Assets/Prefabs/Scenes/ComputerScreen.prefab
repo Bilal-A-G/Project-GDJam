@@ -1195,6 +1195,8 @@ MonoBehaviour:
   changeDirectoryCommand: cd
   openTextFileCommand: cat
   echoCommand: echo
+  openImageCommand: display
+  runExeCommand: run
   exitCommand: exit
   typeSpeed: 15
 --- !u!114 &7827547244992691753
@@ -1209,7 +1211,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 814eb18aa2629fa43bb40b7324c1dd4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  endDirectory: {fileID: 11400000, guid: 2ad11e8ef7c46a6409cbd77a0df97907, type: 2}
+  endings:
+  - directory: {fileID: 11400000, guid: 2ad11e8ef7c46a6409cbd77a0df97907, type: 2}
+    endingScene: End
+  - directory: {fileID: 11400000, guid: 9f88b7e5945a73e4a97b9516e8f4e241, type: 2}
+    endingScene: Hentai
   currentDirectory: {fileID: 11400000, guid: b66d7873b96ce934194f533b5f790eee, type: 2}
   iconParent: {fileID: 7827547244850346807}
   screenFlicker: {fileID: 8131009756246024883}
@@ -1225,7 +1231,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36c215670c7b4904db87e82cd1ae657d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToSolve: 10
+  timeToSolve: 120
   timerSpeed: 1
   timer: {fileID: 7827547245121232754}
 --- !u!114 &8131009756246024883

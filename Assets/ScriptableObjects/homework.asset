@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b6d4cd1ee601d041ab8fff5914cd23b, type: 3}
   m_Name: homework
   m_EditorClassIdentifier: 
-  childDirectories: []
+  childDirectories:
+  - {fileID: 11400000, guid: 995afc18e40993a4fb466dbe2322eb5d, type: 2}
   name: homework
-  icons: {fileID: 8536522749277810810, guid: 6881c9231b9e72d4b98ee5c4153332e7, type: 3}
+  icons: {fileID: 4201336843524243964, guid: ce3a94eb87ccd2e418cfb9a7687c1e0d, type: 3}
   parentDirectory: {fileID: 11400000, guid: b66d7873b96ce934194f533b5f790eee, type: 2}
-  textFile: 0
+  type: 3

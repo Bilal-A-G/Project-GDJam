@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b6d4cd1ee601d041ab8fff5914cd23b, type: 3}
+  m_Name: InitalDirectory
+  m_EditorClassIdentifier: 
+  childDirectories:
+  - {fileID: 11400000, guid: 9d0f7d2814a4e1b47af9c5ade8affa87, type: 2}
+  - {fileID: 11400000, guid: c4c36448f648b1346a6a86fb70992c7d, type: 2}
+  - {fileID: 11400000, guid: 145ccd1a38584be4c9b7b4a93fa5ef2f, type: 2}
+  - {fileID: 11400000, guid: 8d32bb84a91cada4ab2f89f87ff8b7a4, type: 2}
+  - {fileID: 11400000, guid: d1384e77974cd0b4a9cb01ed4832c211, type: 2}
+  - {fileID: 11400000, guid: 3f12cd5df66b77f4ab8971873f618e1b, type: 2}
+  - {fileID: 11400000, guid: 45ee39084b69b7341a4f14b3b66be167, type: 2}
+  - {fileID: 11400000, guid: dead5f938270ede48a3335a0e731a402, type: 2}
+  name: root
+  icons: {fileID: 5856107898394588853, guid: 60edd6c51a7c8c44a87cb09a22243575, type: 3}
+  parentDirectory: {fileID: 0}
+  textFile: 0

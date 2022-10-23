@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Lore
   m_EditorClassIdentifier: 
   childDirectories:
-  - {fileID: 11400000, guid: 2ad11e8ef7c46a6409cbd77a0df97907, type: 2}
+  - {fileID: 11400000, guid: 791785f52c6ab4140ae40253c39b8798, type: 2}
   name: Lore
   icons: {fileID: 5865978517359634905, guid: 72e3cda13b833c849a7d2b1fee55d6ac, type: 3}
   parentDirectory: {fileID: 11400000, guid: b66d7873b96ce934194f533b5f790eee, type: 2}
-  textFile: 0
+  type: 3

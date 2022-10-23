@@ -501,10 +501,12 @@ MonoBehaviour:
   hangTime: 3
   cover: {fileID: 790804158}
   scenes:
-  - name: EndScene
+  - name: End
     scene: {fileID: 8207739021931124760, guid: 5c6f58c0ce18597439190c6156a9e042, type: 3}
   - name: OutOfTime
     scene: {fileID: 8207739021931124760, guid: e12d2ef904fa7414599dc64a2e0041e0, type: 3}
+  - name: Hentai
+    scene: {fileID: 8207739021931124760, guid: a749f5496e4008e419259352d2540118, type: 3}
   currentScene:
     name: GameScene
     scene: {fileID: 2275043883682606376}
@@ -530,7 +532,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7827547244181326957, guid: 5c8ec2cef716d434981a789656ca3b16, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.00004297495
+      value: -0.00005173683
       objectReference: {fileID: 0}
     - target: {fileID: 7827547244268660047, guid: 5c8ec2cef716d434981a789656ca3b16, type: 3}
       propertyPath: m_Value
@@ -552,9 +554,13 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7827547244992691752, guid: 5c8ec2cef716d434981a789656ca3b16, type: 3}
-      propertyPath: timeToSolve
-      value: 120
+    - target: {fileID: 7827547244992691753, guid: 5c8ec2cef716d434981a789656ca3b16, type: 3}
+      propertyPath: endings.Array.data[2].directory
+      value: 
+      objectReference: {fileID: 11400000, guid: 9f88b7e5945a73e4a97b9516e8f4e241, type: 2}
+    - target: {fileID: 7827547244992691753, guid: 5c8ec2cef716d434981a789656ca3b16, type: 3}
+      propertyPath: endings.Array.data[2].endingScene
+      value: Hentai
       objectReference: {fileID: 0}
     - target: {fileID: 7827547244992691755, guid: 5c8ec2cef716d434981a789656ca3b16, type: 3}
       propertyPath: m_Pivot.x

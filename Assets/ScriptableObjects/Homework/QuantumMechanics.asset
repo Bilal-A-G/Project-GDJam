@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b6d4cd1ee601d041ab8fff5914cd23b, type: 3}
-  m_Name: TestDir
+  m_Name: QuantumMechanics
   m_EditorClassIdentifier: 
-  childDirectories: []
-  name: testDir
-  icons: {fileID: 8536522749277810810, guid: 6881c9231b9e72d4b98ee5c4153332e7, type: 3}
-  parentDirectory: {fileID: 11400000, guid: b66d7873b96ce934194f533b5f790eee, type: 2}
-  textFile: 0
+  childDirectories:
+  - {fileID: 11400000, guid: 8c08164b8ce1e2c4589d14018e371337, type: 2}
+  name: Quantum-mechanics
+  icons: {fileID: 4201336843524243964, guid: be557023cf49548439982209346d5d0e, type: 3}
+  parentDirectory: {fileID: 11400000, guid: 995afc18e40993a4fb466dbe2322eb5d, type: 2}
+  type: 3

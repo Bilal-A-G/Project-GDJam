@@ -599,7 +599,7 @@ GameObject:
   - component: {fileID: 8207739021931124741}
   - component: {fileID: 263470069288505781}
   m_Layer: 5
-  m_Name: OutOfTime
+  m_Name: OutOfTimeScreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

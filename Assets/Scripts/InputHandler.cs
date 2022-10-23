@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Diagnostics;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,6 +14,8 @@ public class InputHandler : MonoBehaviour
     public string changeDirectoryCommand;
     public string openTextFileCommand;
     public string echoCommand;
+    public string openImageCommand;
+    public string runExeCommand;
     public string exitCommand;
 
     public float typeSpeed;
@@ -40,9 +43,24 @@ public class InputHandler : MonoBehaviour
         {
             Application.Quit();
         }
-        else if (command == changeDirectoryCommand || command == openTextFileCommand)
+        else if (command == changeDirectoryCommand || command == openTextFileCommand || command == openImageCommand || command == runExeCommand)
         {
-            bool success = directorySwitcher.SwitchDirectory(args, command == openTextFileCommand);
+            FileType type = FileType.Folder;
+            
+            if (command == openTextFileCommand)
+            {
+                type = FileType.Text;
+            }
+            else if (command == openImageCommand)
+            {
+                type = FileType.Image;
+            }
+            else if (command == runExeCommand)
+            {
+                type = FileType.Executable;
+            }
+            
+            bool success = directorySwitcher.SwitchDirectory(args, type);
 
             StartCoroutine(success
                 ? PrintText("Opened " + directorySwitcher.currentDirectory.name)
@@ -54,6 +72,8 @@ public class InputHandler : MonoBehaviour
                                      "\n" + openTextFileCommand + " - opens text files " +
                                      "\n" + exitCommand + " - exits terminal " +
                                      "\n" + changeDirectoryCommand + " - changes directory" +
+                                     "\n" + runExeCommand + " - runs an exe" +
+                                     "\n" + openImageCommand + " - opens images" +
                                      "\n" + echoCommand + " - prints text to terminal"));
         }
         else if(command == echoCommand)

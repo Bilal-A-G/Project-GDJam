@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b6d4cd1ee601d041ab8fff5914cd23b, type: 3}
-  m_Name: Text
+  m_Name: ReallyBoringStuff
   m_EditorClassIdentifier: 
-  childDirectories: []
-  name: text
-  icons: {fileID: 0}
-  parentDirectory: {fileID: 0}
+  childDirectories:
+  - {fileID: 11400000, guid: 9e29e61b80e35d84d9a8ef9f41b39901, type: 2}
+  name: Boring_stuff
+  icons: {fileID: 4201336843524243964, guid: 38db1ea48d765684b838b73d061fa650, type: 3}
+  parentDirectory: {fileID: 11400000, guid: 12356ce7396dbb743bdce6db0d8bbc14, type: 2}
   type: 3

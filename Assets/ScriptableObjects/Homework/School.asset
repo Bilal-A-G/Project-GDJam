@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b6d4cd1ee601d041ab8fff5914cd23b, type: 3}
-  m_Name: Text
+  m_Name: School
   m_EditorClassIdentifier: 
-  childDirectories: []
-  name: text
-  icons: {fileID: 0}
-  parentDirectory: {fileID: 0}
+  childDirectories:
+  - {fileID: 11400000, guid: 12356ce7396dbb743bdce6db0d8bbc14, type: 2}
+  name: School
+  icons: {fileID: 4201336843524243964, guid: 47c17ed64221107429d66fed4fc5f3cc, type: 3}
+  parentDirectory: {fileID: 11400000, guid: 145ccd1a38584be4c9b7b4a93fa5ef2f, type: 2}
   type: 3

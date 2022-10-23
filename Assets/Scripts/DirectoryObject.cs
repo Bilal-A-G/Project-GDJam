@@ -1,13 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Windows;
 
-[CreateAssetMenu(menuName = "Directories/New Directory")]
+public enum FileType
+{
+    Text,
+    Image,
+    Executable,
+    Folder
+}
+
+    [CreateAssetMenu(menuName = "Directories/New Directory")]
 public class DirectoryObject : ScriptableObject
 {
     public List<DirectoryObject> childDirectories;
     public new string name;
     public GameObject icons;
     public DirectoryObject parentDirectory;
-    public bool textFile;
+    public FileType type;
 }

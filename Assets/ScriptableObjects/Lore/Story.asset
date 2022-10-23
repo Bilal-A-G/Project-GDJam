@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b6d4cd1ee601d041ab8fff5914cd23b, type: 3}
-  m_Name: Text
+  m_Name: Story
   m_EditorClassIdentifier: 
   childDirectories: []
-  name: text
-  icons: {fileID: 0}
-  parentDirectory: {fileID: 0}
-  type: 3
+  name: story.txt
+  icons: {fileID: 5838266517584721464, guid: 18836f1647eb87e47b084f5cbf230ec2, type: 3}
+  parentDirectory: {fileID: 11400000, guid: 45ee39084b69b7341a4f14b3b66be167, type: 2}
+  textFile: 1
