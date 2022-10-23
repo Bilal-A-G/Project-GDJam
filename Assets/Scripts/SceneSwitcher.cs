@@ -46,6 +46,7 @@ public class SceneSwitcher : MonoBehaviour
         }
 
         _instantiatedScene = Instantiate(_currentScene.scene);
+        _instantiatedScene.SetActive(false);
         _cover.gameObject.SetActive(true);
         _fade = true;
     }
@@ -59,6 +60,7 @@ public class SceneSwitcher : MonoBehaviour
 
         if (_coverAlpha == 1 + hangTime)
         {
+            _instantiatedScene.SetActive(true);
             _reverse = true;
         }
         else if (_coverAlpha == 0 && _reverse)
