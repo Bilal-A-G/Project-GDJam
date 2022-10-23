@@ -10,11 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b6d4cd1ee601d041ab8fff5914cd23b, type: 3}
-  m_Name: $timeOfDay
+  m_Name: Participants.txt
   m_EditorClassIdentifier: 
-  childDirectories:
-  - {fileID: 11400000, guid: 05d628e757898a14aa2ac2981c568247, type: 2}
-  name: $timeOfDay
-  icons: {fileID: 1455822754602453796, guid: a003bdab6b5dd1d4291a5a5124351686, type: 3}
-  parentDirectory: {fileID: 11400000, guid: b66d7873b96ce934194f533b5f790eee, type: 2}
-  type: 3
+  childDirectories: []
+  name: Participants.txt
+  icons: {fileID: 0}
+  parentDirectory: {fileID: 11400000, guid: d07f7a962fcef7f47bf3dc6964a1bfda, type: 2}
+  type: 0

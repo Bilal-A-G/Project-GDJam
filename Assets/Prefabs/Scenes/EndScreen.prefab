@@ -703,10 +703,25 @@ MonoBehaviour:
   scrollbar: {fileID: 8207739021509636106}
   typeSpeed: 15
   exposition:
-  - exposition: You have doen it :D
-    delay: 2
-  - exposition: Congrats, press escape to exit
+  - exposition: You'd done it just like that; the files were just there in a random
+      folder. "You did it, but at what cost?" a voice said from up high. "By cheating,
+      you invalidate everyone's effort and skills, including your own," the voice
+      said disappointedly. "You should have done something before you ran out of
+      time to submit, but you didn't," they said
+    delay: 7
+  - exposition: '"you''ll likely become the game jam prince/princess due to this,
+      but you''ll never be worthy of that title." "Who are you, and why are you here?"
+      you ask the voice, but by the time you ask, it''s already gone. You hoped you''d
+      heard things because you didn''t want an angry voice coming after you.'
+    delay: 5
+  - exposition: In the end, the omniscient voice and their criticisms didn't matter.
+      You'd won by default with your jpg of the Rock; you were now the game jam prince/princess,
+      and you'd rule with an iron fist, thus making sure you never have the chance
+      of losing again.
+    delay: 3
+  - exposition: Press escape to quit
     delay: 0
+  gameScene: 
 --- !u!1 &8207739022250590014
 GameObject:
   m_ObjectHideFlags: 0

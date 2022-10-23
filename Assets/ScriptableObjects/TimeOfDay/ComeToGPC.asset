@@ -10,11 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b6d4cd1ee601d041ab8fff5914cd23b, type: 3}
-  m_Name: $timeOfDay
+  m_Name: ComeToGPC
   m_EditorClassIdentifier: 
-  childDirectories:
-  - {fileID: 11400000, guid: 05d628e757898a14aa2ac2981c568247, type: 2}
-  name: $timeOfDay
-  icons: {fileID: 1455822754602453796, guid: a003bdab6b5dd1d4291a5a5124351686, type: 3}
-  parentDirectory: {fileID: 11400000, guid: b66d7873b96ce934194f533b5f790eee, type: 2}
-  type: 3
+  childDirectories: []
+  name: Come-To-GPC.txt
+  icons: {fileID: 1756211769993005056, guid: d25b507889e3e1544857e7089fe5d3cc, type: 3}
+  parentDirectory: {fileID: 11400000, guid: dead5f938270ede48a3335a0e731a402, type: 2}
+  type: 0

@@ -1212,7 +1212,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endings:
-  - directory: {fileID: 11400000, guid: 2ad11e8ef7c46a6409cbd77a0df97907, type: 2}
+  - directory: {fileID: 11400000, guid: 32c830c8620b306449b474f0ff114362, type: 2}
     endingScene: End
   - directory: {fileID: 11400000, guid: 9f88b7e5945a73e4a97b9516e8f4e241, type: 2}
     endingScene: Hentai

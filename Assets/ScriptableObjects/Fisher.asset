@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b6d4cd1ee601d041ab8fff5914cd23b, type: 3}
   m_Name: Fisher
   m_EditorClassIdentifier: 
-  childDirectories: []
+  childDirectories:
+  - {fileID: 11400000, guid: 5e565aebd32aee94892412f512701975, type: 2}
   name: Fisher
-  icons: {fileID: 8536522749277810810, guid: 6881c9231b9e72d4b98ee5c4153332e7, type: 3}
+  icons: {fileID: 4307065769568804297, guid: e81fc1beea5d84f4eae894bc98001220, type: 3}
   parentDirectory: {fileID: 11400000, guid: b66d7873b96ce934194f533b5f790eee, type: 2}
   type: 3

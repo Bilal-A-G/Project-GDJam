@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b6d4cd1ee601d041ab8fff5914cd23b, type: 3}
-  m_Name: EndDirectory
+  m_Name: GameJam
   m_EditorClassIdentifier: 
-  childDirectories: []
-  name: Joemama.txt
-  icons: {fileID: 0}
-  parentDirectory: {fileID: 11400000, guid: a487110208f3fd243b5014860aabc546, type: 2}
-  textFile: 1
+  childDirectories:
+  - {fileID: 11400000, guid: d07f7a962fcef7f47bf3dc6964a1bfda, type: 2}
+  name: Game-Jam
+  icons: {fileID: 8080921056637126395, guid: 12157f9c6d6a4a147a8c36f3adc091cf, type: 3}
+  parentDirectory: {fileID: 11400000, guid: c4c36448f648b1346a6a86fb70992c7d, type: 2}
+  type: 3
