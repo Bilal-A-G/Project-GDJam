@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: EndDirectory
   m_EditorClassIdentifier: 
   childDirectories: []
-  name: Joemama
+  name: Joemama.txt
   icons: {fileID: 0}
   parentDirectory: {fileID: 11400000, guid: a487110208f3fd243b5014860aabc546, type: 2}
   textFile: 1

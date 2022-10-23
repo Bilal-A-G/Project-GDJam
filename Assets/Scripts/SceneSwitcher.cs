@@ -27,7 +27,6 @@ public class SceneSwitcher : MonoBehaviour
     {
         _cover = cover;
         _scenes = scenes;
-        Debug.Log(scenes.Count + " " + _scenes.Count);
         _currentScene = currentScene;
         _instantiatedScene = currentScene.scene;
     }

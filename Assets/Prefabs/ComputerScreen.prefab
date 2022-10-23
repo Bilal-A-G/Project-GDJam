@@ -1192,9 +1192,8 @@ MonoBehaviour:
   outputText: {fileID: 7827547244181326961}
   scrollbar: {fileID: 7827547244268660047}
   directorySwitcher: {fileID: 7827547244992691753}
-  endScene: EndScene
-  endDirectory: {fileID: 11400000, guid: 2ad11e8ef7c46a6409cbd77a0df97907, type: 2}
   changeDirectoryCommand: cd
+  openTextFileCommand: cat
   typeSpeed: 15
 --- !u!114 &7827547244992691753
 MonoBehaviour:
@@ -1208,6 +1207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 814eb18aa2629fa43bb40b7324c1dd4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  endDirectory: {fileID: 11400000, guid: 2ad11e8ef7c46a6409cbd77a0df97907, type: 2}
   currentDirectory: {fileID: 11400000, guid: b66d7873b96ce934194f533b5f790eee, type: 2}
   iconParent: {fileID: 7827547244850346807}
   screenFlicker: {fileID: 8131009756246024883}
@@ -1238,7 +1238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cbfe781a5c15ca469be0c77b64f74dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeSpeed: 30
+  fadeSpeed: 10
   hangTime: 0
   cover: {fileID: 7827547245057826427}
 --- !u!1 &7827547245057826421
