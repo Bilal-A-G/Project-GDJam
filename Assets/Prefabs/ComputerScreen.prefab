@@ -1194,6 +1194,8 @@ MonoBehaviour:
   directorySwitcher: {fileID: 7827547244992691753}
   changeDirectoryCommand: cd
   openTextFileCommand: cat
+  echoCommand: echo
+  exitCommand: exit
   typeSpeed: 15
 --- !u!114 &7827547244992691753
 MonoBehaviour:

@@ -1,5 +1,6 @@
 using System.Collections;
 using TMPro;
+using Unity.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,6 +13,8 @@ public class InputHandler : MonoBehaviour
 
     public string changeDirectoryCommand;
     public string openTextFileCommand;
+    public string echoCommand;
+    public string exitCommand;
 
     public float typeSpeed;
 
@@ -34,7 +37,7 @@ public class InputHandler : MonoBehaviour
             args += inputText.text.Split(" ")[i];
         }
 
-        if (inputText.text == "shutdown")
+        if (inputText.text == exitCommand)
         {
             Application.Quit();
         }
@@ -45,6 +48,18 @@ public class InputHandler : MonoBehaviour
             StartCoroutine(success
                 ? PrintText("Opened " + directorySwitcher.currentDirectory.name)
                 : PrintText("Operation failed, directory or file not found"));
+        }
+        else if (inputText.text == "help")
+        {
+            StartCoroutine(PrintText("All commands: " +
+                                     "\n" + openTextFileCommand + " - opens text files " +
+                                     "\n" + exitCommand + " - exits terminal " +
+                                     "\n" + changeDirectoryCommand + " - changes directory" +
+                                     "\n" + echoCommand + " - prints text to terminal"));
+        }
+        else if(command == echoCommand)
+        {
+            StartCoroutine(PrintText(args));
         }
         else
         {
