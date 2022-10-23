@@ -63,7 +63,7 @@ public class InputHandler : MonoBehaviour
             
             StartCoroutine(success
                 ? PrintText("Opened " + directoryName)
-                : PrintText("Operation failed, directory or file: " + directoryName + " not found"));
+                : PrintText("Operation failed, directory or file not found"));
         }
 
         return specialCaseHandled;

@@ -8,6 +8,7 @@ public class DirectorySwitcher : MonoBehaviour
 {
     public DirectoryObject currentDirectory;
     public Transform iconParent;
+    public SceneSwitcher screenFlicker;
     public float directorySwitchSpeed;
 
     private GameObject _instantiatedDirectory;
@@ -44,6 +45,7 @@ public class DirectorySwitcher : MonoBehaviour
         {
             Destroy(_instantiatedDirectory);
             yield return new WaitForSeconds(1 / directorySwitchSpeed);
+            screenFlicker.Fade();
         }
 
         _instantiatedDirectory = Instantiate(directory.icons, iconParent);
