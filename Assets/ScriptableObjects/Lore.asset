@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b6d4cd1ee601d041ab8fff5914cd23b, type: 3}
+  m_Name: Lore
+  m_EditorClassIdentifier: 
+  childDirectories:
+  - {fileID: 11400000, guid: 2ad11e8ef7c46a6409cbd77a0df97907, type: 2}
+  name: Lore
+  icons: {fileID: 5865978517359634905, guid: 72e3cda13b833c849a7d2b1fee55d6ac, type: 3}
+  parentDirectory: {fileID: 11400000, guid: b66d7873b96ce934194f533b5f790eee, type: 2}
+  textFile: 0

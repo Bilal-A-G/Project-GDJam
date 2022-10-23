@@ -504,7 +504,7 @@ MonoBehaviour:
   - name: EndScene
     scene: {fileID: 8207739021931124760, guid: 5c6f58c0ce18597439190c6156a9e042, type: 3}
   - name: OutOfTime
-    scene: {fileID: 8207739021931124760, guid: 5c6f58c0ce18597439190c6156a9e042, type: 3}
+    scene: {fileID: 8207739021931124760, guid: e12d2ef904fa7414599dc64a2e0041e0, type: 3}
   currentScene:
     name: GameScene
     scene: {fileID: 2275043883682606376}
@@ -551,6 +551,10 @@ PrefabInstance:
     - target: {fileID: 7827547244992691751, guid: 5c8ec2cef716d434981a789656ca3b16, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7827547244992691752, guid: 5c8ec2cef716d434981a789656ca3b16, type: 3}
+      propertyPath: timeToSolve
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 7827547244992691755, guid: 5c8ec2cef716d434981a789656ca3b16, type: 3}
       propertyPath: m_Pivot.x
