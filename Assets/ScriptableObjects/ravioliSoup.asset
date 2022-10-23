@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b6d4cd1ee601d041ab8fff5914cd23b, type: 3}
   m_Name: ravioliSoup
   m_EditorClassIdentifier: 
-  childDirectories: []
+  childDirectories:
+  - {fileID: 11400000, guid: b308d8c348415994a83dd6f58d1d9b06, type: 2}
+  - {fileID: 11400000, guid: ab5c8720d627f334cbf8fdd343a3904d, type: 2}
+  - {fileID: 11400000, guid: 15e78efac6856c44c99d3cd58320a5db, type: 2}
   name: ravioli/Soup
-  icons: {fileID: 8536522749277810810, guid: 6881c9231b9e72d4b98ee5c4153332e7, type: 3}
+  icons: {fileID: 7081089962461772280, guid: 2e96d1d7bab667740a45aca950e3716b, type: 3}
   parentDirectory: {fileID: 11400000, guid: b66d7873b96ce934194f533b5f790eee, type: 2}
   type: 3

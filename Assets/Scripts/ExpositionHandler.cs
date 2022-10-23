@@ -11,6 +11,7 @@ public class ExpositionHandler : MonoBehaviour
     public Scrollbar scrollbar;
     public float typeSpeed;
     public List<ExpositionObject> exposition;
+    public string gameScene;
 
     private bool _selected;
     private bool _processingInput;
@@ -21,6 +22,14 @@ public class ExpositionHandler : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Application.Quit();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            if (gameScene != "")
+            {
+                SceneSwitcher.Fade(gameScene);
+            }
         }
         
         if(_processingInput)

@@ -1090,7 +1090,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &7827547244992691755
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1216,6 +1216,8 @@ MonoBehaviour:
     endingScene: End
   - directory: {fileID: 11400000, guid: 9f88b7e5945a73e4a97b9516e8f4e241, type: 2}
     endingScene: Hentai
+  - directory: {fileID: 11400000, guid: bf62701c4259c4d47a8d824011f51ba7, type: 2}
+    endingScene: WatchGame
   currentDirectory: {fileID: 11400000, guid: b66d7873b96ce934194f533b5f790eee, type: 2}
   iconParent: {fileID: 7827547244850346807}
   screenFlicker: {fileID: 8131009756246024883}

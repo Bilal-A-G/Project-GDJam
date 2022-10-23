@@ -38,11 +38,16 @@ public class DirectorySwitcher : MonoBehaviour
             for (int i = 0; i < endings.Count; i++)
             {
                 if (endings[i].directory != directory) continue;
+
+                if (directory.type == FileType.Executable)
+                {
+                    Application.OpenURL("https://bilal-a-g.itch.io/watch-game");
+                }
                 
                 SceneSwitcher.Fade(endings[i].endingScene);
                 return true;
             }
-            
+
             currentDirectory = directory;
             InstantiateDirectory(currentDirectory);
             return true;
